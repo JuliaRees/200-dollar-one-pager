@@ -199,6 +199,10 @@ footer h2 {
     color: #f3c5b9;
 }
 
+.subtle {
+    opacity: 60%;
+}
+
 /* Images & Background Images */
 
 .bg-image {
