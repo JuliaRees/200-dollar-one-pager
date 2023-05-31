@@ -41,6 +41,10 @@ text color: #03302d
 .margin-b-1 { margin-bottom: 1rem; }
 .margin-b-3 { margin-bottom: 3rem; }
 
+.margin-t-7 {
+    margin-top: 7rem;
+}
+
 
 .bg-featured { background-color: #183039;  }
 .bg-dark     { background-color: #24282B;  }
@@ -57,7 +61,7 @@ text color: #03302d
 
 body {
     font-family: 'Quattrocento Sans', sans-serif;
-    color: #03302d;
+    color: #021817;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -109,16 +113,17 @@ a {
     line-height: 0.8;
   }
   
-  .price { 
-      font-weight: 400;
-      text-align: right;
-      font-size: 1.5rem;
-  }
-  
-  .text-lg { font-size: 4.5rem;} 
-  .text-xl { font-size: 6rem;} 
 
-  .services-width { max-width: 30%; }
+.text-lg { font-size: 4.5rem;} 
+.text-xl { font-size: 6rem;} 
+
+.services-width { max-width: 30%; }
+
+.packages-price {
+    padding-right: 3%;
+    font-size: 1.5rem;
+    text-align: right;
+}
 
 /*  Font Awesome Icons --------------------  */
 .fas,
@@ -154,7 +159,7 @@ footer h2 {
 }
 
 .bg-yellow {
-    background-color: #f5d171;
+    background-color: #f7d989;
 }
 
 .bg-pink {
@@ -174,11 +179,11 @@ footer h2 {
 }
 
 .bg-purple {
-    background-color: #b091b3
+    background-color: #b091b3;
 }
 
 .bg-grey {
-    background-color: #8797B2;
+    background-color: #97a4bc;
 }
 
 
@@ -187,11 +192,11 @@ footer h2 {
 }
 
 .text-yellow {
-    color: #f5d171;
+    color: #f7d989;
 }
 
 .text-purple {
-    color: #b091b3
+    color: #b091b3;
 }
 
 .text-blue {
@@ -251,10 +256,11 @@ footer h2 {
 
 .button {
     padding: 0.5rem 2rem;
-    background-color: #f5d171;
+    background-color: #f7d989;
     appearance: none;
-    border: 2px solid #f5d171;
-    color: #03302d;
+    border: 2px solid #f7d989;
+    color: #021817;
+    text-transform: uppercase;
    /* text-decoration: none;
     display: inline-block;
     font-weight: 400; */
@@ -266,6 +272,7 @@ footer h2 {
     appearance: none;
     border: 2px solid #bfd1a0;
     color: #03302d;
+    text-transform: uppercase;
    /* text-decoration: none;
     display: inline-block;
     font-weight: 400; */
@@ -277,6 +284,7 @@ footer h2 {
     appearance: none;
     border: 2px solid #c8e6e0;
     color: #03302d;
+    text-transform: uppercase;
    /* text-decoration: none;
     display: inline-block;
     font-weight: 400; */
@@ -288,6 +296,7 @@ footer h2 {
     appearance: none;
     border: 2px solid #f3c5b9;
     color: #03302d;
+    text-transform: uppercase;
    /* text-decoration: none;
     display: inline-block;
     font-weight: 400; */
@@ -295,10 +304,11 @@ footer h2 {
 
 .button-testimonial {
     padding: 0.5rem 2rem;
-    background-color: #8797B2;
+    background-color: #97a4bc;
     appearance: none;
-    border: 2px solid #8797B2;
+    border: 2px solid #97a4bc;
     color: #03302d;
+    text-transform: uppercase;
    /* text-decoration: none;
     display: inline-block;
     font-weight: 400; */
@@ -310,6 +320,7 @@ footer h2 {
     appearance: none;
     border: 2px solid #b091b3;
     color: #03302d;
+    text-transform: uppercase;
    /* text-decoration: none;
     display: inline-block;
     font-weight: 400; */
@@ -318,9 +329,13 @@ footer h2 {
 .quote-icon {
     font-size: 6rem;
     display: inline-block;
-    color: #b091b3;
+    color: #bfd1a0;
     line-height: 1;
 }
+
+
+
+
 
 /* Gridlex SM  */
 @media(max-width: 48em) {
