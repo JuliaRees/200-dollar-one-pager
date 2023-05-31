@@ -125,6 +125,10 @@ a {
     text-align: right;
 }
 
+.flex-flip-alternate:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 /*  Font Awesome Icons --------------------  */
 .fas,
 .fab {
@@ -334,25 +338,84 @@ footer h2 {
 }
 
 
+/* General CSS  Respondive Styles (Apply everywhere unless overrided) */ 
+
+.show-xs, 
+.show-sm,
+.show-md, 
+.mobile-menu {
+	display: none;
+}
+
+.inline { 
+    display: inline-block;
+    vertical-align: top;
+  }
 
 
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+/*
 
-/* Gridlex SM  */
-@media(max-width: 48em) {
+@media(max-width:64em) { 
 
-    .mob-hide { display: none; }
-
-    .mob-padded-t-0 { padding-top: 0; }
-
-    h1 { font-size: 6rem; }
-    h1 span { font-size: 2rem; }  
-    
-    footer a { font-size: 1rem;}
+    .show-md { display: block; }
+    .hide-md { display: none;  }
 
 }
 
-/* Custom Media Query XXS  */
-@media(max-width: 25em) {
+*/
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+
+@media(max-width:48em) {
+
+.sm-tall-50 { min-height: 50vh; }
+.sm-tall-20 { min-height: 20vh; }
+
+.sm-window {
+    border-top-left-radius: 25rem;
+    border-top-right-radius: 25rem;
+}
+
+.sm-cta-padding {
+        padding-left: 10%;
+        padding-right: 10%;
+}
+
+.sm-margin-b-2 {
+        margin-bottom: 2rem;
+}
+
+.sm-padding-t-3 {
+    padding-top: 3rem;
+}
+
+.sm-padding-b-5 {
+    padding-bottom: 5%;
+}
+
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:36em) { 
+
+
+}
+
+/* ------- XXS Media Query (25em / 400px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:25em) {
+
+/*
+
     h1 { font-size: 4.5rem; }
     h1 span { font-size: 1.5rem; }  
+
+*/
 }
