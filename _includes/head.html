@@ -1,0 +1,26 @@
+<!------------ Technical Metadata------------------------------>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- The title for SEO & browser tabs -->
+<title> The Beach House </title>
+
+<!------------ SEO Metadata  --------------------------------->
+<title> {{page.seo.title | default: site.data.site-settings.seo.title }} </title> 
+<meta name="description" content="{{page.seo.description | default: site.data.site-settings.seo.description }}">
+<meta name="keywords" content="{{page.seo.keywords | default: site.data.site-settings.seo.keywords }}">
+
+<!-- Gridlex for our flexbox grids  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital@0;1&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- This is our custom stylesheet -->
+<link href="/style.css" rel="stylesheet" />
