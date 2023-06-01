@@ -1,0 +1,475 @@
+/*
+Colors:
+yellow #f5d171
+pink: #f3c5b9
+green: #bfd1a0
+blue: #c8e6e0
+beige: #efecda
+text color: #03302d
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+
+.padded-s  { padding: 3%;    }
+.padded    { padding: 5%;    }
+.padded-1  { padding: 1rem;  }
+.padded-2  { padding: 2rem;  }
+.padded-3  { padding: 3rem;  }
+
+.padded-02 { padding: 0 2%; }
+
+
+
+.padded-t-2  { padding-top: 2rem;  }
+.padded-b-0 { padding-bottom: 0rem; }
+.padded-b-2  { padding-bottom: 2rem;  }
+
+.padding-r-6 { padding-right: 6%; }
+
+.margin-b-0 { margin-bottom: 0; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-b-3 { margin-bottom: 3rem; }
+
+.margin-t-7 {
+    margin-top: 7rem;
+}
+
+
+.bg-featured { background-color: #183039;  }
+.bg-dark     { background-color: #24282B;  }
+
+.light-text     { color: white; } 
+.featured-text  { color: #183039; } 
+
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+/* General typography & universal styles  */
+
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: #021817;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Quattrocento', serif;
+    line-height: 1;
+    margin-bottom: 3rem;
+    font-weight: normal;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 0.8;
+}
+
+h1 span {
+    display: block;
+    font-size: 3.5rem;
+    line-height: 0.9;
+}
+
+h2 { font-size: 3.5rem;}
+
+h2 span {
+    display: block;
+    font-size: 2rem;
+    line-height: 0.9;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tight-text {
+    line-height: 0.8;
+  }
+  
+
+.text-lg { font-size: 4.5rem;} 
+.text-xl { font-size: 6rem;} 
+
+.services-width { max-width: 30%; }
+
+.packages-price {
+    padding-right: 3%;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.flex-flip-alternate:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/*  Font Awesome Icons --------------------  */
+.fas,
+.fab {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+  /* Header & Footer */
+
+footer {
+    padding: 5%;
+    padding-bottom: 1rem;
+}
+
+footer a {
+    font-size: 1.2rem;
+}
+
+footer h2 {
+    margin-bottom: 0.5rem;
+}
+
+.sub-footer {
+    padding-top: 5%;
+}
+
+.sub-footer p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.bg-yellow {
+    background-color: #f7d989;
+}
+
+.bg-pink {
+    background-color: #f3c5b9;
+}
+
+.bg-green {
+    background-color: #bfd1a0;
+}
+
+.bg-blue {
+    background-color: #c8e6e0;
+}
+
+.bg-beige {
+    background-color: #efecda;
+}
+
+.bg-purple {
+    background-color: #b091b3;
+}
+
+.bg-grey {
+    background-color: #97a4bc;
+}
+
+
+.bg-dark {
+    background-color: #03302d;
+}
+
+.text-yellow {
+    color: #f7d989;
+}
+
+.text-purple {
+    color: #b091b3;
+}
+
+.text-blue {
+    color: #c8e6e0;
+}
+
+.text-pink {
+    color: #f3c5b9;
+}
+
+.subtle {
+    opacity: 60%;
+}
+
+/* Images & Background Images */
+
+.bg-image {
+    background-image: url('/images/page-1.png');
+    background-color: #183039;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.shape-window {
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem; 
+}
+
+.shape-circle {
+    border-radius: 20rem;
+}
+
+.bg-1 {
+    background-image: url('/images/page-1.png');
+}
+
+.bg-2 {
+    background-image: url('/images/page-2.png');
+}
+
+.bg-3 {
+    background-image: url('/images/page-3.png');
+}
+
+.bg-4 {
+    background-image: url('/images/page-4.png');
+}
+
+.bg-5 {
+    background-image: url('/images/page-5.png');
+}
+
+.bg-6 {
+    background-image: url('/images/page-6.png');
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    background-color: #f7d989;
+    appearance: none;
+    border: 2px solid #f7d989;
+    color: #021817;
+    text-transform: uppercase;
+   /* text-decoration: none;
+    display: inline-block;
+    font-weight: 400; */
+}
+
+.button-packages {
+    padding: 0.5rem 2rem;
+    background-color: #bfd1a0;
+    appearance: none;
+    border: 2px solid #bfd1a0;
+    color: #03302d;
+    text-transform: uppercase;
+   /* text-decoration: none;
+    display: inline-block;
+    font-weight: 400; */
+}
+
+.button-about {
+    padding: 0.5rem 2rem;
+    background-color: #c8e6e0;
+    appearance: none;
+    border: 2px solid #c8e6e0;
+    color: #03302d;
+    text-transform: uppercase;
+   /* text-decoration: none;
+    display: inline-block;
+    font-weight: 400; */
+}
+
+.button-portfolio {
+    padding: 0.5rem 2rem;
+    background-color: #f3c5b9;
+    appearance: none;
+    border: 2px solid #f3c5b9;
+    color: #03302d;
+    text-transform: uppercase;
+   /* text-decoration: none;
+    display: inline-block;
+    font-weight: 400; */
+}
+
+.button-testimonial {
+    padding: 0.5rem 2rem;
+    background-color: #97a4bc;
+    appearance: none;
+    border: 2px solid #97a4bc;
+    color: #03302d;
+    text-transform: uppercase;
+   /* text-decoration: none;
+    display: inline-block;
+    font-weight: 400; */
+}
+
+.button-contact {
+    padding: 0.5rem 2rem;
+    background-color: #b091b3;
+    appearance: none;
+    border: 2px solid #b091b3;
+    color: #03302d;
+    text-transform: uppercase;
+   /* text-decoration: none;
+    display: inline-block;
+    font-weight: 400; */
+}
+
+.quote-icon {
+    font-size: 6rem;
+    display: inline-block;
+    color: #bfd1a0;
+    line-height: 1;
+}
+
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    position: fixed;
+    right: 5%;
+    top: 0rem;
+    z-index: 4;
+  }
+  
+/* Styles when the hamburger button is active  */
+
+.hamburger-button.active {
+    color: var(--light-text);
+}
+  
+  
+.mobile-menu {
+    display: none; 
+    background-color: var(--featured);
+    padding: 5%;
+    position: fixed; 
+    z-index:3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+  
+.mobile-menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 2%;
+    display: block;
+    font-weight: normal;
+}
+
+
+
+/* General CSS  Respondive Styles (Apply everywhere unless overrided) */ 
+
+.show-xs, 
+.show-sm,
+.show-md, 
+.mobile-menu {
+	display: none;
+}
+
+.inline { 
+    display: inline-block;
+    vertical-align: top;
+  }
+
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+
+@media(max-width:64em) { 
+
+.show-md { display: block; }
+.hide-md { display: none;  }
+
+}
+
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+
+@media(max-width:48em) {
+
+.sm-tall-50 { min-height: 50vh; }
+.sm-tall-20 { min-height: 20vh; }
+
+.sm-window {
+    border-top-left-radius: 25rem;
+    border-top-right-radius: 25rem;
+}
+
+.sm-cta-padding {
+        padding-left: 10%;
+        padding-right: 10%;
+}
+
+.sm-margin-b-2 {
+        margin-bottom: 2rem;
+}
+
+.sm-padding-t-3 {
+    padding-top: 3rem;
+}
+
+.sm-padding-b-5 {
+    padding-bottom: 5%;
+}
+
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:36em) { 
+
+h2 { 
+    font-size: 2.8rem; 
+    margin-bottom: 2rem;
+}
+
+.xs-m-0 {
+    margin-bottom: 0; 
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+}
+
+/* ------- XXS Media Query (25em / 400px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media(max-width:25em) {
+
+/*
+
+    h1 { font-size: 4.5rem; }
+    h1 span { font-size: 1.5rem; }  
+
+*/
+}
